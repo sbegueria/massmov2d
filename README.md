@@ -5,12 +5,12 @@ massmov2d is a fluid mechanics model for simulating the kinematics (runout and d
 
 massmov2d has been implemented in the PCRaster dynamic modelling language. PCRaster is a free GIS package and dynamic modeling system, and provides standard tools for editing the input maps and visualizing the results through map animations, time series, etc. Besides that, being an open text script written in a easy to learn language allows the user of massmov2d to dig into the code and eventually incorporate new modeling concepts such as alternative rheologies.
 
-## Usage
+## Usage
 
 pcrcalc -f massmov_v091.mod [rheology] [rho] [yield_stress] [viscosity/Chèzy] [b_friction_angle]  [i_friction_angle] [fluid_rate]
 [timesteps]
 
-## Arguments
+## Arguments
 
 rheology An integer, defining the rheological law to be used. Use 1 for pure frictional and Voellmy frictional, and 2 for Bingham viscous or Coulomb viscous.
 rho Density of the flow (kg.m-3). A scalar.
@@ -44,7 +44,7 @@ The outlet map is usually just a map of (boolean) zeros, in which case the bound
 
 The fluidization distance map indicates the distance to the toe of the landslide. The toe of the landslide, which is defined as having zero distance, is considered to be fluid at the beginning of the simulation. From that area, fluidization advances at a time rate defined by the fluid_rate parameter.
 
-## Output
+## Output
 
 The model produces a series of standard outputs, and many others can be produced by uncommenting the appropriate lines of code in the script. Reporting is done for each second of the simulation time, although other reporting frequencies can be set by modifying the rep_a and rep_b variables in the timer section of the script. The standard outputs are the following files:
 
@@ -56,9 +56,6 @@ A dummy time series containing just zeroes. The name of the file provides inform
 ## Disclaimer
 
 This script is provided 'as is' and any express or implied warranties, including, but not limited to, the implied warranties of fitness for a particular purpose are disclaimed. In no event shall the author be liable for any direct, indirect, incidental, special, exemplary or consequential damages arising in any way out of the use of this software.
-
-## See Also
-New function allowing vector calculus for PCRaster.
 
 ## Examples
 
