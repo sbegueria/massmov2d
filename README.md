@@ -1,4 +1,4 @@
-# massmov2d
+# massmov2d [![DOI](https://zenodo.org/badge/104469035.svg)](https://zenodo.org/badge/latestdoi/104469035)
 A numerical model for mass movements over complex topography
 
 massmov2d is a fluid mechanics model for simulating the kinematics (runout and deposition) of fluid-like mass movements such as landslides, rock slides, debris flows and mud flows, over a complex topography. The flow is modelled as a 2D continuum by using a depth-integrated form of the Navier-Stokes equations under the shallow water assumption (Saint-Venant equation). The flow behaviour is controlled by the resisting forces, for which a set of alternative rheological models can be used.
