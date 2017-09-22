@@ -19,7 +19,7 @@
 # nally the model used fractional time steps which vary depending on the
 # flow characteristics, based on the Courant-Friedrichs-Levy condition.
 # More details on the implementation of MassMov2D can be found on:
-# Beguería S., Van Asch T.W.J., Malet J.P., Grondahl S. (2009), A GIS-based
+# BeguerÃ­a S., Van Asch T.W.J., Malet J.P., Grondahl S. (2009), A GIS-based
 # numerical model for simulating the kinematics of mud, debris flows over
 # complex terrain. Natural Hazards and Earth System Sciences 9, 1897-1909.
 
@@ -47,7 +47,7 @@
 # quential damages arising in any way out of the use of this software.
 
 # License
-# MassMov2D is copyright © 2006-2011 of Santiago Begueria-Portugues.
+# MassMov2D is copyright Â© 2006-2011 of Santiago Begueria-Portugues.
 # Some rights reserved
 # BY NC SA - This work is distributed under an 'Attribution Non-Commercial
 # Share Alike' license. This means that anyone is allowed to use it and build
@@ -72,14 +72,14 @@ binding
  Rho          = scalar($2);		# Density of the df (kg.m-3)
  YieldStress  = scalar($3);		# Apparent yield stress (Pa), for Bingham
  Visco        = scalar($4);		# Bingham viscosity (Pa.s), for Bingham and Coulomb
- Chezy        = scalar($4);		# Chézy roughness coefficient (m.s-2), for Voellmy
+ Chezy        = scalar($4);		# ChÃ©zy roughness coefficient (m.s-2), for Voellmy
  HBExp   	  = 1;				# Herschel-Bulkley exponent (=1 for Bingham)
- Friction     = scalar($5);		# Angle of friction basal (º)
- IntFriction  = scalar($6);		# Angle of internal friction (º)
+ Friction     = scalar($5);		# Angle of friction basal (Âº)
+ IntFriction  = scalar($6);		# Angle of internal friction (Âº)
 
  # Inlet boundary condition:
  # Only for landslides: rate of fluidization of the failed mass
- Fluidrate    = scalar($7);		# Transition from solid to fluid (m.s-1)
+ Fluidrate    = scalar($7);		# Transition from solid to fluid (m.s-1) 
 
  # Timestep control
  dT           = 1;				# Timeslice (seconds)
@@ -453,7 +453,7 @@ dynamic
  #report maxvh.tss   = mapmaximum(Vel*H);   # maximum d.f. momentum (m.m.s-1)
  #report maxq.tss    = mapmaximum(q);       # maximum d.f. discharge (m3.s-1)
  #report cfl.tss     = CFLmax;              # maximum Courant condition value
- #report loops.tss   = n;                   # nº intern loops whithin timestep
+ #report loops.tss   = n;                   # nÂº intern loops whithin timestep
  #report vol.tss	 = Vol_actual;          # total volume (m3)
  #report volexp.tss	 = Vol_expect;          # expected volume (m3)
  #report massbal.tss = MassBalError;        # mass balance error (m3.m-3)
