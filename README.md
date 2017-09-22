@@ -1,9 +1,15 @@
 # massmov2d [![DOI](https://zenodo.org/badge/104469035.svg)](https://zenodo.org/badge/latestdoi/104469035)
-A numerical model for mass movements over complex topography
+
+A numerical model for mass movements over complex topography, as described in:
+
+* **Beguería, S., Van Asch, T.W.J., Malet, J.P. & Gröndahl S. (2009): A GIS based numerical model for simulating the kinematics of mud and debris flows over complex terrain', Natural Hazards and Earth System Sciences 9, 1897-1909**.
 
 massmov2d is a fluid mechanics model for simulating the kinematics (runout and deposition) of fluid-like mass movements such as landslides, rock slides, debris flows and mud flows, over a complex topography. The flow is modelled as a 2D continuum by using a depth-integrated form of the Navier-Stokes equations under the shallow water assumption (Saint-Venant equation). The flow behaviour is controlled by the resisting forces, for which a set of alternative rheological models can be used.
 
 massmov2d has been implemented in the PCRaster dynamic modelling language. PCRaster is a free GIS package and dynamic modeling system, and provides standard tools for editing the input maps and visualizing the results through map animations, time series, etc. Besides that, being an open text script written in a easy to learn language allows the user of massmov2d to dig into the code and eventually incorporate new modeling concepts such as alternative rheologies.
+
+If you use this code or parts of it, it'd be nice if you cite the repo as:
+* **Beguería S. (2009) massmov2d: A numerical model for mass movements over complex topography, doi:10.5281/zenodo.930061**.
 
 ## Usage
 
